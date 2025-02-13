@@ -34,7 +34,7 @@ function Hero() {
         </div>
       </div>
       <div className="shadow-xl max-w-160 h-150">
-        <img src="/10.jpg" alt="" className="w-full h-full object-cover" />
+        <img src="/10.jpg" alt="" className="w-full h-full object-cover rounded-lg" />
       </div>
 
       <div className="fixed right-10 bottom-10 flex items-center gap-2">
