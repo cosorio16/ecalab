@@ -11,11 +11,11 @@ function Card({
   console.log(services[0]);
 
   return (
-    <div className="w-full max-w-150 shadow rounded-lg border border-slate-300">
+    <div className="w-full max-w-150 shadow-sm rounded-sm">
       <img
         src={image}
         alt=""
-        className="rounded-t-lg h-56 w-full object-cover"
+        className="rounded-t-sm h-56 w-full object-cover"
       />
       <div className="flex flex-col gap-2 py-8 px-5">
         <h1 className="text-2xl font-medium uppercase">{title}</h1>

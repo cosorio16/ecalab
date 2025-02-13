@@ -1,3 +1,5 @@
+import Carrusel from "./Carrusel";
+
 function Hero() {
   return (
     <section className="px-20 py-8 gap-5 text-[#2C3E50] grid grid-cols-2 justify-items-end items-center">
@@ -33,8 +35,8 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className="shadow-xl max-w-160 h-150">
-        <img src="/10.jpg" alt="" className="w-full h-full object-cover rounded-lg" />
+      <div className="shadow-xl max-w-180 rounded-lg">
+        <Carrusel />
       </div>
 
       <div className="fixed right-10 bottom-10 flex items-center gap-2">

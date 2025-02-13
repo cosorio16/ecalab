@@ -5,19 +5,19 @@ function Header() {
       <nav className="flex items-center gap-14 text-lg">
         <a
           href="#"
-          className="hover:text-[#1977cc] font-semibold transition-all "
+          className="hover:text-[#1977cc] font-semibold transition-all text-xl "
         >
           Inicio
         </a>
         <a
           href="#"
-          className="hover:text-[#1977cc] font-semibold transition-all"
+          className="hover:text-[#1977cc] font-semibold transition-all text-xl"
         >
           Nosotros
         </a>
         <a
           href="#"
-          className="hover:text-[#1977cc] font-semibold transition-all"
+          className="hover:text-[#1977cc] font-semibold transition-all text-xl"
         >
           Servicios
         </a>
