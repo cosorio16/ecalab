@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="w-screen shadow py-10 px-20 flex justify-between items-center text-[#222]">
+    <header className="max-w-screen shadow py-10 px-20 flex justify-between items-center text-[#222]">
       <h1 className="text-xl font-medium uppercase">Ecalab DV</h1>
       <nav className="flex items-center gap-14 text-lg">
         <a
@@ -21,12 +21,7 @@ function Header() {
         >
           Servicios
         </a>
-        <a
-          href="#"
-          className="hover:text-[#1977cc] font-semibold transition-all"
-        >
-          Otros
-        </a>
+
         <button className="w-fit px-10 py-3 border rounded bg-orange-400 text-lg font-medium flex items-center gap-5 text-white">
           <svg width="25" height="25" viewBox="0 0 24 24">
             <path

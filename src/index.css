@@ -9,9 +9,12 @@
   font-style: normal;
 }
 
-
 /* Primary: Sophisticated sky blue (#33C3F0)
 Secondary: Pure white (#FFFFFF)
 Accent: Bright orange (#F97316) for CTAs
 Text: Rich black for readability
 Subtle shadows and glass effects */
+
+section {
+  color: #2c3e50;
+}

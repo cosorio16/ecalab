@@ -1,6 +1,6 @@
 function Hero() {
   return (
-    <section className="px-20 py-8 gap-14 text-[#2C3E50] grid grid-cols-2 justify-items-end items-center">
+    <section className="px-20 py-8 gap-5 text-[#2C3E50] grid grid-cols-2 justify-items-end items-center">
       <div className="flex flex-col gap-10 items-start">
         <div className="flex flex-col gap-4">
           <span className="rounded-full w-fit px-6 py-3 font-semibold bg-sky-50 text-sky-500 flex items-center justify-center">
@@ -37,14 +37,49 @@ function Hero() {
         <img src="/10.jpg" alt="" className="w-full h-full object-cover" />
       </div>
 
-      <button className="aspect-square bg-green-600 text-white rounded-full p-5 fixed right-10 bottom-10">
-        <svg width="25" height="25" viewBox="0 0 24 24">
-          <path
-            fill="currentColor"
-            d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.767L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2m0 14h-7.277L9 18.233V16H4V4h16z"
-          />
-        </svg>
-      </button>
+      <div className="fixed right-10 bottom-10 flex items-center gap-2">
+        <button className="aspect-square bg-green-600 text-white rounded-full p-5 opacity-50 hover:opacity-100 transition-all duration-300 cursor-pointer ">
+          <svg width="25" height="25" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M20 2H4c-1.103 0-2 .897-2 2v12c0 1.103.897 2 2 2h3v3.767L13.277 18H20c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2m0 14h-7.277L9 18.233V16H4V4h16z"
+            />
+          </svg>
+        </button>
+        <button className="aspect-square bg-orange-400 text-white rounded-full p-5 opacity-50 hover:opacity-100 transition-all duration-300 cursor-pointer ">
+          <svg width="25" height="25" viewBox="0 0 24 24">
+            <g
+              fill="none"
+              stroke="currentColor"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+            >
+              <path
+                strokeDasharray="28"
+                strokeDashoffset="28"
+                d="M7 8c0 -2.76 2.24 -5 5 -5c2.76 0 5 2.24 5 5c0 1.64 -0.79 3.09 -2 4c-0.84 0.63 -3 2 -3 5"
+              >
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  dur="0.6s"
+                  values="28;0"
+                />
+              </path>
+              <path strokeDasharray="2" strokeDashoffset="2" d="M12 21v0.01">
+                <animate
+                  fill="freeze"
+                  attributeName="stroke-dashoffset"
+                  begin="0.6s"
+                  dur="0.2s"
+                  values="2;0"
+                />
+              </path>
+            </g>
+          </svg>
+        </button>
+      </div>
     </section>
   );
 }
