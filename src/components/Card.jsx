@@ -9,7 +9,7 @@ function Card({
   image,
 }) {
   return (
-    <div className="min-w-80 w-full shadow-lg rounded-lg">
+    <div data-aos="fade-up" className="min-w-80 w-full shadow-lg rounded-lg">
       <img
         src={image}
         alt=""
@@ -17,7 +17,9 @@ function Card({
       />
       <div className="flex flex-col gap-2 py-8 px-6">
         <h1 className="text-3xl font-bold text-blue-900 uppercase">{title}</h1>
-        <p className="text-lg font-medium border-b border-slate-300 pb-5 text-pretty">{description}</p>
+        <p className="text-lg font-medium border-b border-slate-300 pb-5 text-pretty">
+          {description}
+        </p>
         {recommendations && (
           <ul className="flex items-start flex-col gap-2 py-4">
             {recommendations.map((r, i) => (

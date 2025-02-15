@@ -1,23 +1,38 @@
+import { useEffect } from "react";
 import Carrusel from "./Carrusel";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Hero() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <section className="px-5 lg:px-20 py-5 text-[#2C3E50] grid grid-cols-1 gap-10 justify-items-end lg:grid-cols-2 items-center border-b-2 border-slate-300 pb-20">
       <div className="flex flex-col gap-10 lg:items-start items-center ">
         <div className="flex flex-col gap-4">
-          <span className=" text-sm lg:text-base rounded-full w-fit px-6 py-3 font-semibold bg-sky-50 text-sky-500 flex items-center justify-center">
+          <span
+            data-aos="zoom-in-up"
+            className=" text-sm lg:text-base rounded-full w-fit px-6 py-3 font-semibold bg-sky-50 text-sky-500 flex items-center justify-center"
+          >
             Bienvenidos a ECALAB DV
           </span>
-          <h1 className="text-4xl xl:text-6xl font-semibold ">
+          <h1
+            data-aos="fade-right"
+            className="text-4xl xl:text-6xl font-semibold "
+          >
             Diagnóstico Veterinario
           </h1>
-          <p className="text-xl xl:text-2xl font-medium">
+          <p data-aos="fade-right" className="text-xl xl:text-2xl font-medium">
             Servicios de laboratorio de última generación que proporcionan
             resultados precisos y oportunos para profesionales veterinarios.
           </p>
         </div>
         <div className="flex flex-wrap w-full gap-5 lg:gap-10">
-          <button className="min-w-fit py-3 border rounded bg-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-medium flex items-center gap-5">
+          <button 
+          data-aos="fade-up"
+          className="min-w-fit py-3 border rounded bg-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-medium flex items-center gap-5">
             Leer Mas
             <svg width="25" height="25" viewBox="0 0 15 15">
               <path
@@ -26,7 +41,9 @@ function Hero() {
               />
             </svg>
           </button>
-          <button className="min-w-fit py-3 border rounded text-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-lg font-medium flex items-center gap-5">
+          <button 
+          data-aos="fade-up"
+          className="min-w-fit py-3 border rounded text-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-lg font-medium flex items-center gap-5">
             <svg width="25" height="25" viewBox="0 0 24 24">
               <path
                 fill="currentColor"

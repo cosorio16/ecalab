@@ -16,7 +16,10 @@ function Services() {
   return (
     <section className="py-10 px-5 lg:px-10 2xl:px-12 flex flex-col gap-10 border-b-2 border-slate-300 pb-20">
       <div className="flex flex-col gap-10">
-        <h1 className="text-4xl lg:text-5xl font-semibold flex text-center gap-4">
+        <h1
+          data-aos="fade-right"
+          className="text-4xl lg:text-5xl font-semibold flex text-center gap-4"
+        >
           Nuestros Servicios
           <span className="text-blue-500">
             <svg width="45" height="45" viewBox="0 0 24 24">
@@ -27,13 +30,13 @@ function Services() {
             </svg>
           </span>
         </h1>
-        <p className="text-lg lg:text-2xl font-medium">
+        <p data-aos="fade-left" className="text-lg lg:text-2xl font-medium">
           Nuestra prioridad es brindar un servicio eficiente y de alta calidad,
           adaptado a las necesidades de los profesionales veterinarios. Con la
           apertura de nuestro primer laboratorio, ofrecemos un trato más
           personalizado y tiempos de respuesta optimizados.
         </p>
-        <p className="text-lg lg:text-2xl font-medium">
+        <p data-aos="fade-left" className="text-lg lg:text-2xl font-medium">
           Contamos con un amplio catálogo de pruebas, incluyendo patología,
           microbiología, alergología, biología molecular, higiene, genética y
           más, asegurando diagnósticos precisos para una mejor atención clínica.

@@ -3,7 +3,10 @@ import Map from "../components/Map";
 function Contact() {
   return (
     <section className="px-5 lg:px-16 py-10 flex flex-col gap-10">
-      <h1 className="text-5xl font-semibold flex items-center gap-5">
+      <h1
+        data-aos="fade-right"
+        className="text-5xl font-semibold flex items-center gap-5"
+      >
         {/* <span className="bg-blue-500 text-white size-12 flex items-center justify-center aspect-square rounded-full">
           <svg width="20" height="25" viewBox="0 0 304 432">
             <path
@@ -14,7 +17,10 @@ function Contact() {
         </span> */}
         Contactanos
       </h1>
-      <div className=" grid grid-cols-1 xl:grid-cols-4 gap-16 border-b py-5 pb-10">
+      <div
+        data-aos="fade-up"
+        className=" grid grid-cols-1 xl:grid-cols-4 gap-16 border-b py-5 pb-10"
+      >
         <h1 className="flex items-center gap-4 text-lg font-medium">
           <span className="bg-blue-500 text-white size-12 flex items-center justify-center aspect-square rounded-full">
             <svg width="20" height="25" viewBox="0 0 304 432">
