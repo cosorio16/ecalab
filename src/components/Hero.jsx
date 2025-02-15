@@ -2,7 +2,7 @@ import Carrusel from "./Carrusel";
 
 function Hero() {
   return (
-    <section className="px-5 lg:px-20 py-8 gap-5 text-[#2C3E50] grid grid-cols-1  justify-items-end 2xl:grid-cols-2">
+    <section className="px-5 lg:px-20 py-5 text-[#2C3E50] grid grid-cols-1 gap-10 justify-items-end lg:grid-cols-2 items-center border-b-2 border-slate-300 pb-20">
       <div className="flex flex-col gap-10 lg:items-start items-center ">
         <div className="flex flex-col gap-4">
           <span className=" text-sm lg:text-base rounded-full w-fit px-6 py-3 font-semibold bg-sky-50 text-sky-500 flex items-center justify-center">
@@ -11,13 +11,13 @@ function Hero() {
           <h1 className="text-4xl xl:text-6xl font-semibold ">
             Diagnóstico Veterinario
           </h1>
-          <p className="text-lg xl:text-2xl font-medium">
+          <p className="text-xl xl:text-2xl font-medium">
             Servicios de laboratorio de última generación que proporcionan
             resultados precisos y oportunos para profesionales veterinarios.
           </p>
         </div>
         <div className="flex flex-wrap w-full gap-5 lg:gap-10">
-          <button className="min-w-fit py-3 border rounded bg-orange-400  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-medium flex items-center gap-5">
+          <button className="min-w-fit py-3 border rounded bg-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-medium flex items-center gap-5">
             Leer Mas
             <svg width="25" height="25" viewBox="0 0 15 15">
               <path
@@ -26,7 +26,7 @@ function Hero() {
               />
             </svg>
           </button>
-          <button className="min-w-fit py-3 border rounded text-orange-400  cursor-pointer justify-center w-52 lg:px-16 text-lg font-medium flex items-center gap-5">
+          <button className="min-w-fit py-3 border rounded text-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-lg font-medium flex items-center gap-5">
             <svg width="25" height="25" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
@@ -37,7 +37,7 @@ function Hero() {
           </button>
         </div>
       </div>
-      <div className="hidden lg:inline shadow-xl w-full max-w-150 rounded-lg h-150">
+      <div className="hidden lg:inline shadow-xl ring-4 ring-offset-4 ring-blue-200 hover:ring-blue-300 w-full rounded-lg h-150 transition-all duration-500">
         <Carrusel />
       </div>
 
@@ -50,7 +50,7 @@ function Hero() {
             />
           </svg>
         </button>
-        <button className="aspect-square bg-orange-400 text-white rounded-full p-5 opacity-50 hover:opacity-100 transition-all duration-300 cursor-pointer ">
+        <button className="aspect-square bg-blue-500 text-white rounded-full p-5 opacity-50 hover:opacity-100 transition-all duration-300 cursor-pointer ">
           <svg width="25" height="25" viewBox="0 0 24 24">
             <g
               fill="none"

@@ -28,6 +28,7 @@ export default function Carrusel() {
         modules={[Autoplay]}
         onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
+        grabCursor
       >
         <SwiperSlide>
           <img src="/5.jpg" alt="" />

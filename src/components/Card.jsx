@@ -8,22 +8,21 @@ function Card({
   metodos,
   image,
 }) {
-
   return (
-    <div className="min-w-full max-w-150 shadow-lg rounded-lg hover:shadow-2xl transition-all duration-300">
+    <div className="min-w-80 w-full shadow-lg rounded-lg">
       <img
         src={image}
         alt=""
-        className="rounded-t-lg h-56 w-full object-cover"
+        className="rounded-t-lg h-64 w-full object-cover"
       />
-      <div className="flex flex-col gap-2 py-8 px-5">
-        <h1 className="text-2xl font-medium uppercase">{title}</h1>
-        <p className="text-lg font-medium">{description}</p>
+      <div className="flex flex-col gap-2 py-8 px-6">
+        <h1 className="text-3xl font-bold text-blue-900 uppercase">{title}</h1>
+        <p className="text-lg font-medium border-b border-slate-300 pb-5 text-pretty">{description}</p>
         {recommendations && (
-          <ul className="flex items-start flex-col gap-2">
+          <ul className="flex items-start flex-col gap-2 py-4">
             {recommendations.map((r, i) => (
-              <li key={i} className="flex items-center gap-3">
-                <span>
+              <li key={i} className="flex items-center gap-3 font-semibold">
+                <span className="border bg-blue-500 text-white rounded-full p-1">
                   <svg width="25" height="25" viewBox="0 0 24 24">
                     <path
                       fill="currentColor"
@@ -38,15 +37,11 @@ function Card({
         )}
 
         {ventajas && (
-          <ul className="flex items-start flex-col gap-2">
+          <ul className="flex items-start flex-col gap-2 py-4">
             {ventajas.map((r, i) => (
-              <li key={i} className="flex items-center gap-3">
-                <span>
-                  <svg
-                    width="25"
-                    height="25"
-                    viewBox="0 0 24 24"
-                  >
+              <li key={i} className="flex items-center gap-3 font-semibold">
+                <span className="border bg-blue-500 text-white rounded-full p-1">
+                  <svg width="25" height="25" viewBox="0 0 24 24">
                     <path
                       fill="currentColor"
                       d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"
@@ -59,10 +54,10 @@ function Card({
           </ul>
         )}
         {metodos && (
-          <ul className="flex items-start flex-col gap-2">
+          <ul className="flex items-start flex-col gap-2 py-4">
             {metodos.map((r, i) => (
-              <li key={i} className="flex items-center gap-3">
-                <span>
+              <li key={i} className="flex items-center gap-3 font-semibold">
+                <span className="border bg-blue-500 text-white rounded-full p-1">
                   <svg width="25" height="25" viewBox="0 0 24 24">
                     <path
                       fill="currentColor"
