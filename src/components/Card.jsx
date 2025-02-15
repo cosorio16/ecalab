@@ -8,14 +8,13 @@ function Card({
   metodos,
   image,
 }) {
-  console.log(services[0]);
 
   return (
-    <div className="w-full max-w-150 shadow-sm rounded-sm">
+    <div className="min-w-full max-w-150 shadow-lg rounded-lg hover:shadow-2xl transition-all duration-300">
       <img
         src={image}
         alt=""
-        className="rounded-t-sm h-56 w-full object-cover"
+        className="rounded-t-lg h-56 w-full object-cover"
       />
       <div className="flex flex-col gap-2 py-8 px-5">
         <h1 className="text-2xl font-medium uppercase">{title}</h1>

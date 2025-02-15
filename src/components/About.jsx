@@ -13,7 +13,7 @@ function About() {
       </div>
 
       {/* Servicios */}
-      <div className="grid grid-cols-3 gap-20">
+      {/* <div className="grid grid-cols-2 gap-20">
         <div className="gap-2 flex border border-slate-300 flex-col shadow bg-white rounded px-8 py-10">
           <h2 className="text-3xl font-semibold">Toma de muestra</h2>
           <p className="text-lg">
@@ -45,7 +45,7 @@ function About() {
             brindar apoyo en diagnósticos y tratamientos.
           </p>
         </div>
-      </div>
+      </div> */}
 
       <p className="text-2xl font-medium">
         En nuestro laboratorio, entendemos la importancia de un diagnóstico
@@ -58,7 +58,7 @@ function About() {
       </p>
 
       {/* Estadísticas */}
-      <div className="grid grid-cols-4 justify-items-center gap-10">
+      {/* <div className="grid grid-cols-4 justify-items-center gap-10">
         <div className="border border-slate-300 rounded bg-white shadow min-w-fit w-96 py-5 flex flex-col items-center">
           <h2 className="font-bold text-4xl">19</h2>
           <p className="font-medium text-xl">Equipo</p>
@@ -75,7 +75,7 @@ function About() {
           <h2 className="font-bold text-4xl">8</h2>
           <p className="font-medium text-xl">Reconocimientos</p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

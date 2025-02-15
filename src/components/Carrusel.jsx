@@ -1,47 +1,68 @@
+import { useRef } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+
 import "swiper/css";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
-import 'swiper/css/effect-fade';
-import { Pagination, Navigation, Autoplay, EffectFade } from "swiper/modules";
+import "swiper/css/effect-fade";
 
-function Carrusel() {
-  const images = [
-    "/1.jpg",
-    "/2.jpg",
-    "/3.jpg",
-    "/4.jpg",
-    "/5.jpg",
-    "/6.jpg",
-    "/7.jpg",
-    "/8.jpg",
-    "/10.jpg",
-    "/11.jpg",
-  ];
+import { Autoplay } from "swiper/modules";
 
+export default function Carrusel() {
+  const progressCircle = useRef(null);
+
+  const onAutoplayTimeLeft = (s, time, progress) => {
+    progressCircle.current.style.setProperty("--progress", 1 - progress);
+  };
   return (
     <>
       <Swiper
-        slidesPerView={1}
         spaceBetween={30}
-        effect="fade"
-        centeredSlides
+        centeredSlides={true}
         autoplay={{
-          delay: 2000,
+          delay: 1500,
           disableOnInteraction: false,
         }}
-        loop={true}
-        modules={[Autoplay, EffectFade]}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay]}
+        onAutoplayTimeLeft={onAutoplayTimeLeft}
         className="mySwiper"
       >
-        {images.map((image, i) => (
-          <SwiperSlide key={i}>
-            <img src={image} alt="" className="w-full h-150 object-cover rounded-lg"/>
-          </SwiperSlide>
-        ))}
+        <SwiperSlide>
+          <img src="/5.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/2.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/3.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/4.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/1.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/6.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/7.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/8.jpg" alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src="/10.jpg" alt="" />
+        </SwiperSlide>
+
+        <div className="autoplay-progress" slot="container-end">
+          <svg viewBox="0 0 48 48" ref={progressCircle}>
+            <circle cx="24" cy="24" r="20"></circle>
+          </svg>
+        </div>
       </Swiper>
     </>
   );
 }
-
-export default Carrusel;
