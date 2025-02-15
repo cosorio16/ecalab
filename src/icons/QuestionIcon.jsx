@@ -1,4 +1,4 @@
-function Question({ sizes }) {
+function QuestionIcon({ sizes }) {
   return (
     <svg width={sizes} height={sizes} viewBox="0 0 24 24">
       <g
@@ -34,4 +34,4 @@ function Question({ sizes }) {
   );
 }
 
-export default Question;
+export default QuestionIcon;

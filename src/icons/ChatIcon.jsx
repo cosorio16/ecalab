@@ -1,4 +1,4 @@
-function Chat({ sizes }) {
+function ChatIcon({ sizes }) {
   return (
     <svg width={sizes} height={sizes} viewBox="0 0 24 24">
       <path
@@ -9,4 +9,4 @@ function Chat({ sizes }) {
   );
 }
 
-export default Chat;
+export default ChatIcon;
