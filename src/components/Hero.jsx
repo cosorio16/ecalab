@@ -7,7 +7,7 @@ function Hero() {
   return (
     <section className="px-5 lg:px-20 py-5 text-[#2C3E50] grid grid-cols-1 gap-10 justify-items-end lg:grid-cols-2 items-center border-b-2 border-slate-300 pb-20">
       <div className="flex flex-col gap-10 lg:items-start items-center ">
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 items-center justify-items-center text-center lg:justify-items-start lg:text-start lg:items-start">
           <span
             data-aos="zoom-in-up"
             className=" text-sm lg:text-base rounded-full w-fit px-6 py-3 font-semibold bg-sky-50 text-sky-500 flex items-center justify-center"
@@ -25,11 +25,11 @@ function Hero() {
             resultados precisos y oportunos para profesionales veterinarios.
           </p>
         </div>
-        <div className="flex flex-wrap w-full gap-5 lg:gap-10">
-          <button
-            data-aos="fade-up"
-            className="min-w-fit py-3 border rounded bg-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-medium flex items-center gap-5"
-          >
+        <div
+          data-aos="fade-up"
+          className="flex flex-wrap gap-5 lg:gap-10 lg:w-full"
+        >
+          <button className="min-w-fit py-3 border hover:scale-105 active:scale-95 rounded bg-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-medium flex items-center gap-5 transition-all duration-300">
             Leer Mas
             <svg width="25" height="25" viewBox="0 0 15 15">
               <path
@@ -38,10 +38,7 @@ function Hero() {
               />
             </svg>
           </button>
-          <button
-            data-aos="fade-up"
-            className="min-w-fit py-3 border rounded text-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-lg font-medium flex items-center gap-5"
-          >
+          <button className="min-w-fit py-3 border hover:scale-105 active:scale-95 rounded text-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-lg font-medium flex items-center gap-5 transition-all duration-300">
             <svg width="25" height="25" viewBox="0 0 24 24">
               <path
                 fill="currentColor"

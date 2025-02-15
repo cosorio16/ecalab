@@ -9,7 +9,10 @@ function Card({
   image,
 }) {
   return (
-    <div data-aos="fade-up" className="min-w-80 w-full shadow-lg rounded-lg">
+    <div
+      data-aos="fade-up"
+      className="min-w-96 lg:min-w-80 w-full shadow-lg rounded-lg"
+    >
       <img
         src={image}
         alt=""
