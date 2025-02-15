@@ -15,6 +15,11 @@ Accent: Bright orange (#F97316) for CTAs
 Text: Rich black for readability
 Subtle shadows and glass effects */
 
+html {
+  scrollbar-width: none;
+  overflow-x: hidden;
+}
+
 section {
   color: #2c3e50;
 }

@@ -31,31 +31,31 @@ export default function Carrusel() {
         grabCursor
       >
         <SwiperSlide>
-          <img src="/5.jpg" alt="" />
+          <img loading="lazy" src="/5.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/2.jpg" alt="" />
+          <img loading="lazy" src="/2.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/3.jpg" alt="" />
+          <img loading="lazy" src="/3.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/4.jpg" alt="" />
+          <img loading="lazy" src="/4.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/1.jpg" alt="" />
+          <img loading="lazy" src="/1.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/6.jpg" alt="" />
+          <img loading="lazy" src="/6.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/7.jpg" alt="" />
+          <img loading="lazy" src="/7.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/8.jpg" alt="" />
+          <img loading="lazy" src="/8.jpg" alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="/10.jpg" alt="" />
+          <img loading="lazy" src="/10.jpg" alt="" />
         </SwiperSlide>
 
         <div className="autoplay-progress" slot="container-end">
