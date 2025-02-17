@@ -77,4 +77,45 @@ let services = [
   },
 ];
 
-export default services;
+let faq = [
+  {
+    question: "¿Cuál es el horario de atención?",
+    answer:
+      "Si necesitas recolección de muestras, llámanos al 55 4274 5321 y te informaremos sobre los horarios de servicio. Para la toma de muestras en nuestras instalaciones, agenda tu cita al 56 2160 7231. Recibimos muestras hasta las 18:00 hrs. Consulta los horarios de ruta haciendo clic en el siguiente enlace.",
+    link: "#",
+    text: "Ver horarios de ruta",
+  },
+  {
+    question: "¿Cómo debo tomar mis muestras correctamente?",
+    answer:
+      "El procedimiento varía según el estudio que necesites realizar. Cada prueba tiene requisitos específicos, por lo que te recomendamos visitar nuestro blog para obtener información detallada y asegurarte de cumplir con todas las indicaciones.",
+  },
+  {
+    question: "¿Debo seguir algún cuidado antes y después de la toma de muestra?",
+    answer:
+      "Para la mayoría de los estudios, es importante mantener un ayuno mínimo de 8 horas de sólidos y líquidos. Sin embargo, algunas pruebas requieren preparaciones específicas. Sigue siempre las indicaciones de tu médico para garantizar la precisión de los resultados y los cuidados necesarios después del procedimiento.",
+  },
+  {
+    question: "¿Cuentan con un área especializada para la toma de muestras?",
+    answer:
+      "Sí, contamos con un espacio totalmente equipado para la toma de muestras, desde procedimientos básicos como análisis sanguíneos hasta estudios más complejos, como recolección de líquido cefalorraquídeo o médula ósea. Nuestro equipo está capacitado para brindarte un servicio seguro y profesional.",
+  },
+  {
+    question: "¿Cómo saber qué pruebas son adecuadas para mi paciente?",
+    answer:
+      "La elección de las pruebas depende de varios factores, como el examen físico, la historia clínica y los tratamientos previos. Para obtener un diagnóstico preciso, te recomendamos consultar con un especialista que pueda orientarte sobre los estudios más adecuados.",
+  },
+  {
+    question: "¿Cuánto tardan en entregarse los resultados?",
+    answer:
+      "Los resultados de bioquímica, hemograma y urianálisis estarán listos en un máximo de 24 horas. Para el resto de los estudios, los tiempos de entrega varían según la prueba. Consulta nuestro catálogo para conocer los tiempos específicos de cada análisis.",
+  },
+  {
+    question: "¿Qué necesito para agendar mis estudios?",
+    answer:
+      "Para programar tu estudio, es necesario contar con una hoja de solicitud de servicio o una receta médica emitida por un Médico Veterinario Zootecnista (MVZ) con cédula profesional. Si tienes dudas, nuestro equipo está listo para orientarte en el proceso.",
+  },
+];
+
+
+export default { services, faq };

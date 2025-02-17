@@ -1,4 +1,4 @@
-import services from "../../lib/def";
+import data from "../../lib/def";
 import Card from "../ui/Card";
 
 function Services() {
@@ -47,7 +47,7 @@ function Services() {
         </div>
       </div>
       <div className="lg:grid flex overflow-x-scroll lg:overflow-hidden lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 justify-items-stretch w-full p-2">
-        {services.map((s, i) => (
+        {data.services.map((s, i) => (
           <Card
             image={images[i]}
             key={i}
