@@ -15,7 +15,7 @@ function QuestionContent() {
         {data.faq.map((d, i) => (
           <li
             key={i}
-            onClick={(e) => setCurrent(i)}
+            onClick={() => setCurrent(i)}
             className={`flex flex-col gap-2 px-5 py-3 rounded ring  ${
               current == i
                 ? "ring-2 ring-offset-2 ring-blue-400"
@@ -24,7 +24,7 @@ function QuestionContent() {
           >
             <div className="flex justify-between items-center">
               <h1 className="flex items-center gap-3 font-semibold text-2xl">
-                <span className="border aspect-square rounded-full p-1 text-blue-500">
+                <span className="ring-2 aspect-square rounded-full p-0.5 text-blue-500">
                   <QuestionIcon sizes={20} />
                 </span>
                 {d.question}

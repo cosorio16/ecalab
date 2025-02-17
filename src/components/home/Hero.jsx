@@ -45,10 +45,9 @@ function Hero() {
         <Carrusel />
       </div>
 
-      <div className="fixed right-10 bottom-10 flex items-center gap-2 z-10">
+      <div className="hidden fixed right-10 bottom-10 lg:flex items-center gap-2 z-10">
         <Chat />
         <Question />
-        {/* <Modal /> */}
       </div>
     </section>
   );
