@@ -1,7 +1,9 @@
-import Carrusel from "./Carrusel";
-import Chat from "./Chat";
-import Question from "./Question";
-import Modal from "../components/Modal";
+import Carrusel from "../Carrusel";
+import Chat from "../Chat";
+import Question from "../Question";
+import Arrow from "../../icons/Arrow";
+import Calendar from "../../icons/Calendar";
+import Modal from "../Modal";
 
 function Hero() {
   return (
@@ -29,22 +31,12 @@ function Hero() {
           data-aos="fade-up"
           className="flex flex-wrap gap-5 lg:gap-10 lg:w-full"
         >
-          <button className="min-w-fit py-3 border hover:scale-105 active:scale-95 rounded bg-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-medium flex items-center gap-5 transition-all duration-300">
+          <button className="min-w-fit py-3 border hover:ring-2 hover:ring-offset-2 hover:border-transparent active:scale-95 rounded bg-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-semibold flex items-center gap-5 transition-all duration-200">
             Leer Mas
-            <svg width="25" height="25" viewBox="0 0 15 15">
-              <path
-                fill="currentColor"
-                d="M8.293 2.293a1 1 0 0 1 1.414 0l4.5 4.5a1 1 0 0 1 0 1.414l-4.5 4.5a1 1 0 0 1-1.414-1.414L11 8.5H1.5a1 1 0 0 1 0-2H11L8.293 3.707a1 1 0 0 1 0-1.414"
-              />
-            </svg>
+            <Arrow sizes={25} />
           </button>
-          <button className="min-w-fit py-3 border hover:scale-105 active:scale-95 rounded text-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-lg font-medium flex items-center gap-5 transition-all duration-300">
-            <svg width="25" height="25" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M12 14a1 1 0 1 0-1-1a1 1 0 0 0 1 1m5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1m-5 4a1 1 0 1 0-1-1a1 1 0 0 0 1 1m5 0a1 1 0 1 0-1-1a1 1 0 0 0 1 1M7 14a1 1 0 1 0-1-1a1 1 0 0 0 1 1M19 4h-1V3a1 1 0 0 0-2 0v1H8V3a1 1 0 0 0-2 0v1H5a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m1 15a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-9h16Zm0-11H4V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1ZM7 18a1 1 0 1 0-1-1a1 1 0 0 0 1 1"
-              />
-            </svg>
+          <button className="min-w-fit py-3 border hover:ring-2 hover:ring-offset-2 hover:border-transparent active:scale-95 rounded text-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-lg font-semibold flex items-center gap-5 transition-all duration-200">
+            <Calendar sizes={25} />
             Agendar cita
           </button>
         </div>

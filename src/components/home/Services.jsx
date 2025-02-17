@@ -1,5 +1,5 @@
-import Card from "./Card";
-import services from "../lib/def";
+import services from "../../lib/def";
+import Card from "../ui/Card";
 
 function Services() {
   const images = [
@@ -15,7 +15,7 @@ function Services() {
 
   return (
     <section className="py-10 px-5 lg:px-10 2xl:px-12 flex flex-col gap-10 border-b-2 border-slate-300 pb-20">
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-5">
         <h1
           data-aos="fade-right"
           className="text-4xl lg:text-5xl font-semibold flex text-center gap-4"
@@ -30,17 +30,21 @@ function Services() {
             </svg>
           </span>
         </h1>
-        <p data-aos="fade-left" className="text-lg lg:text-2xl font-medium">
-          Nuestra prioridad es brindar un servicio eficiente y de alta calidad,
-          adaptado a las necesidades de los profesionales veterinarios. Con la
-          apertura de nuestro primer laboratorio, ofrecemos un trato más
-          personalizado y tiempos de respuesta optimizados.
-        </p>
-        <p data-aos="fade-left" className="text-lg lg:text-2xl font-medium">
-          Contamos con un amplio catálogo de pruebas, incluyendo patología,
-          microbiología, alergología, biología molecular, higiene, genética y
-          más, asegurando diagnósticos precisos para una mejor atención clínica.
-        </p>
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
+          <p data-aos="fade-left" className="text-lg lg:text-2xl font-medium">
+            Nuestra prioridad es brindar un servicio eficiente y de alta
+            calidad, adaptado a las necesidades de los profesionales
+            veterinarios. Con la apertura de nuestro primer laboratorio,
+            ofrecemos un trato más personalizado y tiempos de respuesta
+            optimizados.
+          </p>
+          <p data-aos="fade-left" className="text-lg lg:text-2xl font-medium">
+            Contamos con un amplio catálogo de pruebas, incluyendo patología,
+            microbiología, alergología, biología molecular, higiene, genética y
+            más, asegurando diagnósticos precisos para una mejor atención
+            clínica.
+          </p>
+        </div>
       </div>
       <div className="lg:grid flex overflow-x-scroll lg:overflow-hidden lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 justify-items-stretch w-full p-2">
         {services.map((s, i) => (

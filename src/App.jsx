@@ -1,10 +1,9 @@
 import { useEffect } from "react";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import About from "./components/About";
+import Header from "./components/ui/Header";
+import Hero from "./components/home/Hero";
+import Services from "./components/home/Services";
+import Contact from "./components/home/Contact";
+import Footer from "./components/ui/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -20,7 +19,6 @@ function App() {
     <>
       <Header />
       <Hero />
-      {/* <About /> */}
       <Services />
       <Contact />
       <Footer />
