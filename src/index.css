@@ -1,18 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import "tailwindcss";
 
 * {
-  font-family: "Nunito", serif;
-  font-optical-sizing: auto;
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
+  font-optical-sizing: auto;
+  scrollbar-width: none;
 }
 
 /* Primary: Sophisticated sky blue (#33C3F0)
 Secondary: Pure white (#FFFFFF)
 Accent: Bright orange (#F97316) for CTAs
 Text: Rich black for readability
-Subtle shadows and glass effects */
+Subtle shadows and glass effects 
+#6cc4cc
+*/
 
 html {
   scrollbar-width: none;

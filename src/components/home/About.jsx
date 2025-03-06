@@ -28,7 +28,7 @@ function About() {
             Contamos con personal capacitado para la recolección y manejo de
             muestras.
           </p>
-          <button className="w-96 flex items-center gap-2 border rounded px-5 py-2 font-semibold bg-blue-400 text-white cursor-pointer hover:gap-5 transition-all duration-300 justify-center m-auto mt-10">
+          <button className="w-96 flex items-center gap-2 border rounded px-5 py-2 font-semibold bg-[#6cc4cc] text-white cursor-pointer hover:gap-5 transition-all duration-300 justify-center m-auto mt-10">
             <svg width="20" height="25" viewBox="0 0 304 432">
               <path
                 fill="currentColor"

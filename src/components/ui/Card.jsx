@@ -30,7 +30,7 @@ function Card({
           <ul className="flex items-start flex-col gap-2 py-4">
             {recommendations.map((r, i) => (
               <li key={i} className="flex items-center gap-3 font-semibold">
-                <span className="border bg-blue-500 text-white rounded-full p-1">
+                <span className="border bg-[#6cc4cc] text-white rounded-full p-1">
                   <Check sizes={25} />
                 </span>
                 {r}
@@ -43,7 +43,7 @@ function Card({
           <ul className="flex items-start flex-col gap-2 py-4">
             {ventajas.map((r, i) => (
               <li key={i} className="flex items-center gap-3 font-semibold">
-                <span className="border bg-blue-500 text-white rounded-full p-1">
+                <span className="border bg-[#6cc4cc] text-white rounded-full p-1">
                   <Star sizes={25} />
                 </span>
                 {r}
@@ -55,7 +55,7 @@ function Card({
           <ul className="flex items-start flex-col gap-2 py-4">
             {metodos.map((r, i) => (
               <li key={i} className="flex items-center gap-3 font-semibold">
-                <span className="border bg-blue-500 text-white rounded-full p-1">
+                <span className="border bg-[#6cc4cc] text-white rounded-full p-1">
                   <Syringe sizes={25} />
                 </span>
                 {r}

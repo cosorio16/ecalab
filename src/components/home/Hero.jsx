@@ -12,7 +12,7 @@ function Hero() {
         <div className="flex flex-col gap-4 items-center justify-items-center text-center lg:justify-items-start lg:text-start lg:items-start">
           <span
             data-aos="zoom-in-up"
-            className=" text-sm lg:text-base rounded-full w-fit px-6 py-3 font-semibold bg-sky-50 text-sky-500 flex items-center justify-center"
+            className=" text-sm lg:text-base rounded-full w-fit px-6 py-3 font-semibold bg-sky-50 text-[#6cc4cc] flex items-center justify-center"
           >
             Bienvenidos a ECALAB DV
           </span>
@@ -31,17 +31,17 @@ function Hero() {
           data-aos="fade-up"
           className="flex flex-wrap gap-5 lg:gap-10 lg:w-full"
         >
-          <button className="min-w-fit py-3 border hover:ring-2 hover:ring-offset-2 hover:border-transparent active:scale-95 rounded bg-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-semibold flex items-center gap-5 transition-all duration-200">
+          <button className="min-w-fit py-3 border hover:ring-2 hover:ring-offset-2 hover:border-transparent active:scale-95 rounded bg-[#6cc4cc]  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-semibold flex items-center gap-5 transition-all duration-200">
             Leer Mas
             <Arrow sizes={25} />
           </button>
-          <button className="min-w-fit py-3 border hover:ring-2 hover:ring-offset-2 hover:border-transparent active:scale-95 rounded text-blue-500  cursor-pointer justify-center w-52 lg:px-16 text-lg font-semibold flex items-center gap-5 transition-all duration-200">
+          <button className="min-w-fit py-3 border hover:ring-2 hover:ring-offset-2 hover:border-transparent active:scale-95 rounded text-[#6cc4cc]  cursor-pointer justify-center w-52 lg:px-16 text-lg font-semibold flex items-center gap-5 transition-all duration-200">
             <Calendar sizes={25} />
             Agendar cita
           </button>
         </div>
       </div>
-      <div className="hidden lg:inline shadow-xl ring-4 ring-offset-4 ring-blue-200 hover:ring-blue-300 w-full rounded-lg h-150 transition-all duration-500">
+      <div className="hidden lg:inline shadow-xl ring-4 ring-offset-4 ring-[#8cd5db] hover:ring-[#64b2b9] w-full rounded-lg h-150 transition-all duration-500">
         <Carrusel />
       </div>
 

@@ -21,7 +21,7 @@ function Services() {
           className="text-4xl lg:text-5xl font-semibold flex text-center gap-4"
         >
           Nuestros Servicios
-          <span className="text-blue-500">
+          <span className="text-[#6cc4cc]">
             <svg width="45" height="45" viewBox="0 0 24 24">
               <path
                 fill="currentColor"

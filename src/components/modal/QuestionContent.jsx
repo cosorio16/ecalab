@@ -24,7 +24,7 @@ function QuestionContent() {
           >
             <div className="flex justify-between items-center">
               <h1 className="flex items-center gap-3 font-semibold text-2xl">
-                <span className="ring-2 aspect-square rounded-full p-0.5 text-blue-500">
+                <span className="ring-2 aspect-square rounded-full p-0.5 text-[#6cc4cc]">
                   <QuestionIcon sizes={20} />
                 </span>
                 {d.question}
