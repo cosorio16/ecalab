@@ -41,7 +41,7 @@ function Header() {
 
           <button
             data-aos="fade-left"
-            className="w-fit px-10 py-3 border rounded bg-[#6cc4cc] text-lg font-medium flex items-center gap-5 text-white"
+            className="w-fit px-10 py-3 border rounded bg-[#6cc4cc] text-lg font-semibold flex items-center gap-5 text-white cursor-pointer"
           >
             <Calendar sizes={25} />
             Agendar cita

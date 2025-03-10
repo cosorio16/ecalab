@@ -10,7 +10,7 @@ function QuestionContent() {
       onClick={(e) => e.stopPropagation()}
       className="flex flex-col gap-10 items-center py-20"
     >
-      <h1 data-aos="zoom-in" className="text-5xl font-semibold">
+      <h1 data-aos="zoom-in" className="text-4xl xl:text-5xl font-semibold">
         Preguntas Frecuentes
       </h1>
       <ul
@@ -28,7 +28,7 @@ function QuestionContent() {
             } transition-all duration-300 cursor-pointer`}
           >
             <div className="flex justify-between items-center">
-              <h1 className="flex items-center gap-3 font-semibold text-2xl">
+              <h1 className="flex items-center gap-3 font-semibold text-xl lg:text-2xl">
                 <span className="ring-2 aspect-square rounded-full p-0.5 text-[#6cc4cc]">
                   <QuestionIcon sizes={20} />
                 </span>
@@ -42,7 +42,7 @@ function QuestionContent() {
               )}
             </div>
             <span
-              className={`${current == i ? "text-lg font-medium" : "hidden"}`}
+              className={`${current == i ? "text-lg xl:text-xl font-medium" : "hidden"}`}
             >
               {d.answer}
             </span>

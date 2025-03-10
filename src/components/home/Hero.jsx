@@ -29,7 +29,7 @@ function Hero() {
         </div>
         <div
           data-aos="fade-up"
-          className="flex flex-wrap gap-2 lg:gap-10 lg:w-full"
+          className="flex flex-wrap justify-center md:justify-start md:gap-5 gap-2 xl:gap-10 lg:w-full"
         >
           <button className="min-w-fit py-3 border hover:ring-2 hover:ring-offset-2 hover:border-transparent active:scale-95 rounded bg-[#6cc4cc]  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-semibold flex items-center gap-5 transition-all duration-200">
             Leer Mas

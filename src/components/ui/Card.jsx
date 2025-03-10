@@ -22,14 +22,14 @@ function Card({
         className="rounded-t-lg h-64 w-full object-cover"
       />
       <div className="flex flex-col gap-2 py-8 px-6">
-        <h1 className="text-3xl font-bold text-blue-900 uppercase">{title}</h1>
+        <h1 className="text-3xl font-bold text-[#60afb6] uppercase">{title}</h1>
         <p className="text-lg font-medium border-b border-slate-300 pb-5 text-pretty">
           {description}
         </p>
         {recommendations && (
           <ul className="flex items-start flex-col gap-2 py-4">
             {recommendations.map((r, i) => (
-              <li key={i} className="flex items-center gap-3 font-semibold">
+              <li key={i} className="flex items-center gap-3 font-medium">
                 <span className="border bg-[#6cc4cc] text-white rounded-full p-1">
                   <Check sizes={25} />
                 </span>
@@ -42,7 +42,7 @@ function Card({
         {ventajas && (
           <ul className="flex items-start flex-col gap-2 py-4">
             {ventajas.map((r, i) => (
-              <li key={i} className="flex items-center gap-3 font-semibold">
+              <li key={i} className="flex items-center gap-3 font-medium">
                 <span className="border bg-[#6cc4cc] text-white rounded-full p-1">
                   <Star sizes={25} />
                 </span>
@@ -54,7 +54,7 @@ function Card({
         {metodos && (
           <ul className="flex items-start flex-col gap-2 py-4">
             {metodos.map((r, i) => (
-              <li key={i} className="flex items-center gap-3 font-semibold">
+              <li key={i} className="flex items-center gap-3 font-medium">
                 <span className="border bg-[#6cc4cc] text-white rounded-full p-1">
                   <Syringe sizes={25} />
                 </span>
