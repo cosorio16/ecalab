@@ -3,7 +3,7 @@ import Calendar from "../../icons/Calendar";
 function Header() {
   return (
     <>
-      <header className="hidden max-w-screen shadow-md py-10 px-20 lg:flex justify-between items-center text-[#222] gap-10">
+      <header className="hidden max-w-screen shadow-md py-5 px-20 lg:flex justify-between items-center text-[#222] gap-10">
         {/* <h1
           data-aos="fade-right"
           className="text-4xl font-bold uppercase text-[#6cc4cc]"

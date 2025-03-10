@@ -29,7 +29,7 @@ function Hero() {
         </div>
         <div
           data-aos="fade-up"
-          className="flex flex-wrap gap-5 lg:gap-10 lg:w-full"
+          className="flex flex-wrap gap-2 lg:gap-10 lg:w-full"
         >
           <button className="min-w-fit py-3 border hover:ring-2 hover:ring-offset-2 hover:border-transparent active:scale-95 rounded bg-[#6cc4cc]  cursor-pointer justify-center w-52 lg:px-16 text-white text-lg font-semibold flex items-center gap-5 transition-all duration-200">
             Leer Mas
@@ -47,7 +47,6 @@ function Hero() {
 
       <div className="hidden fixed right-10 bottom-10 lg:flex items-center gap-2 z-10">
         <Chat />
-        <Question />
       </div>
     </section>
   );

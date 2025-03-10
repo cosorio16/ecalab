@@ -4,6 +4,7 @@ import Hero from "./components/home/Hero";
 import Services from "./components/home/Services";
 import Contact from "./components/home/Contact";
 import Footer from "./components/ui/Footer";
+import QuestionContent from "./components/modal/QuestionContent";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -20,6 +21,7 @@ function App() {
       <Header />
       <Hero />
       <Services />
+      <QuestionContent/>
       <Contact />
       <Footer />
     </>
