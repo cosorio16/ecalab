@@ -14,7 +14,7 @@ function Services() {
   ];
 
   return (
-    <section className="py-10 px-5 lg:px-10 2xl:px-12 flex flex-col gap-10 border-b-2 border-slate-300 pb-20">
+    <section id="SERVICIOS"  className="py-10 px-5 lg:px-10 2xl:px-12 flex flex-col gap-10 border-b-2 border-slate-300 pb-20">
       <div className="flex flex-col gap-5">
         <h1
           data-aos="fade-right"
@@ -46,7 +46,7 @@ function Services() {
           </p>
         </div>
       </div>
-      <div className="lg:grid flex overflow-x-scroll lg:overflow-hidden lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 justify-items-stretch w-full p-2">
+      <div className="lg:grid flex overflow-x-scroll lg:overflow-hidden lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5 justify-items-stretch w-full p-2 scrollCards">
         {data.services.map((s, i) => (
           <Card
             image={images[i]}

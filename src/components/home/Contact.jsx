@@ -6,7 +6,9 @@ import Mail from "../../icons/Mail";
 
 function Contact() {
   return (
-    <section className="px-5 lg:px-16 py-10 flex flex-col gap-10">
+    <section 
+    id="CONTACTANOS"
+    className="px-5 lg:px-16 py-10 flex flex-col gap-10">
       <h1
         data-aos="fade-right"
         className="text-5xl font-semibold flex items-center gap-5"

@@ -14,7 +14,7 @@ function Card({
   return (
     <div
       data-aos="fade-up"
-      className="min-w-96 lg:min-w-80 w-full shadow-lg rounded-lg"
+      className="min-w-96 lg:min-w-80 w-full shadow-lg rounded-lg cardScroll"
     >
       <img
         src={image}

@@ -79,3 +79,21 @@ body {
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
 }
+
+.scrollCards {
+  scroll-snap-type: x mandatory;
+}
+
+.cardScroll {
+  scroll-snap-align: center;
+}
+
+@media screen and (max-width: 100px) {
+  /* Aquí van los estilos para pantallas con un ancho mínimo de 100px */
+}
+
+@media (width <= 64rem /* 1024px */) {
+  section {
+   padding-top: 100px;
+  }
+}

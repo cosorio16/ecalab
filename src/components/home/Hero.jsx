@@ -7,7 +7,9 @@ import Modal from "../Modal";
 
 function Hero() {
   return (
-    <section className="px-5 lg:px-20 py-5 text-[#2C3E50] grid grid-cols-1 gap-10 justify-items-end lg:grid-cols-2 items-center border-b-2 border-slate-300 pb-20">
+    <section 
+    id="HOME"
+    className="px-5 lg:px-20 py-5 text-[#2C3E50] grid grid-cols-1 gap-10 justify-items-end lg:grid-cols-2 items-center border-b-2 border-slate-300 pb-20">
       <div className="flex flex-col gap-10 lg:items-start items-center ">
         <div className="flex flex-col gap-4 items-center justify-items-center text-center lg:justify-items-start lg:text-start lg:items-start">
           <span

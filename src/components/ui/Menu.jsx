@@ -1,8 +1,9 @@
 import React from "react";
 
-function Menu({ state }) {
+function Menu({ state, onClose }) {
   return (
     <div
+      onClick={onClose}
       className={`fixed text-white inset-0 bg-black/50 z-10 top-19 ${
         state ? "opacity-100" : "opacity-0 pointer-events-none"
       } transition-all`}
@@ -14,13 +15,13 @@ function Menu({ state }) {
       >
         <ul className={`h-full flex flex-col `}>
           <li className="border-b py-3 text-lg font-semibold text-start px-5">
-            <a href="#">Inicio</a>
+            <a href="#HOME">Inicio</a>
           </li>
           <li className="border-b py-3 text-lg font-semibold text-start px-5">
-            <a href="#">Servicios</a>
+            <a href="#SERVICIOS">Servicios</a>
           </li>
           <li className="border-b py-3 text-lg font-semibold text-start px-5">
-            <a href="#">Ubicaciones</a>
+            <a href="#CONTACTANOS">Ubicaciones</a>
           </li>
           <li className="border-b py-3 text-lg font-semibold text-start px-5">
             <button>Agendar Ahora</button>

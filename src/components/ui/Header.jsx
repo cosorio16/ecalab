@@ -54,14 +54,15 @@ function Header() {
         </nav>
       </header>
 
-      <header className="max-w-screen h-20 bg-[#64b2b9] lg:hidden flex items-center px-5">
+      <header className="max-w-screen h-20 bg-[#64b2b9] lg:hidden flex items-center px-5 fixed w-screen top-0 left-0 z-10 justify-between">
+      <img src="/logos/1.jpg" alt="" className="size-16 mix-blend-multiply"/>
         <button
           onClick={() => setShowMenu((showMenu) => !showMenu)}
           className="text-white"
         >
           {showMenu ? <Close sizes={50} /> : <MenuIcon sizes={50} />}
         </button>
-        <Menu state={showMenu} />
+        <Menu state={showMenu} onClose={() => setShowMenu(false)} />
       </header>
     </>
   );
