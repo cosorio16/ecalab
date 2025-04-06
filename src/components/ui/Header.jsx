@@ -1,6 +1,11 @@
+import { useState } from "react";
 import Calendar from "../../icons/Calendar";
+import Menu from "./Menu";
+import MenuIcon from "../../icons/MenuIcon";
+import Close from "../../icons/Close";
 
 function Header() {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <>
       <header className="hidden max-w-screen shadow-md py-5 px-20 lg:flex justify-between items-center text-[#222] gap-10">
@@ -50,14 +55,13 @@ function Header() {
       </header>
 
       <header className="max-w-screen h-20 bg-[#64b2b9] lg:hidden flex items-center px-5">
-        <button className="text-white">
-          <svg width="50" height="50" viewBox="0 0 24 24">
-            <path
-              fill="currentColor"
-              d="M4 7a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1"
-            />
-          </svg>
+        <button
+          onClick={() => setShowMenu((showMenu) => !showMenu)}
+          className="text-white"
+        >
+          {showMenu ? <Close sizes={50} /> : <MenuIcon sizes={50} />}
         </button>
+        <Menu state={showMenu} />
       </header>
     </>
   );
