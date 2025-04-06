@@ -14,17 +14,23 @@ function Menu({ state, onClose }) {
         }transition-all duration-300 `}
       >
         <ul className={`h-full flex flex-col `}>
-          <li className="border-b py-3 text-lg font-semibold text-start px-5">
-            <a href="#HOME">Inicio</a>
+          <li className="border-b  text-lg font-semibold text-start px-5 flex">
+            <a className="py-3 min-w-full" href="#HOME">
+              Inicio
+            </a>
           </li>
-          <li className="border-b py-3 text-lg font-semibold text-start px-5">
-            <a href="#SERVICIOS">Servicios</a>
+          <li className="border-b  text-lg font-semibold text-start px-5 flex">
+            <a className="py-3 min-w-full" href="#SERVICIOS">
+              Servicios
+            </a>
           </li>
-          <li className="border-b py-3 text-lg font-semibold text-start px-5">
-            <a href="#CONTACTANOS">Ubicaciones</a>
+          <li className="border-b  text-lg font-semibold text-start px-5 flex">
+            <a className="py-3 min-w-full" href="#CONTACTANOS">
+              Ubicaciones
+            </a>
           </li>
-          <li className="border-b py-3 text-lg font-semibold text-start px-5">
-            <button>Agendar Ahora</button>
+          <li className="border-b  text-lg font-semibold text-start px-5 flex">
+            <button className="py-3">Agendar Ahora</button>
           </li>
         </ul>
       </div>

@@ -7,9 +7,10 @@ import Modal from "../Modal";
 
 function Hero() {
   return (
-    <section 
-    id="HOME"
-    className="px-5 lg:px-20 py-5 text-[#2C3E50] grid grid-cols-1 gap-10 justify-items-end lg:grid-cols-2 items-center border-b-2 border-slate-300 pb-20">
+    <section
+      id="HOME"
+      className="px-5 lg:px-20 py-5 text-[#2C3E50] grid grid-cols-1 gap-10 justify-items-end lg:grid-cols-2 items-center border-b-2 border-slate-300 pb-20"
+    >
       <div className="flex flex-col gap-10 lg:items-start items-center ">
         <div className="flex flex-col gap-4 items-center justify-items-center text-center lg:justify-items-start lg:text-start lg:items-start">
           <span
@@ -47,7 +48,7 @@ function Hero() {
         <Carrusel />
       </div>
 
-      <div className="hidden fixed right-10 bottom-10 lg:flex items-center gap-2 z-10">
+      <div className="fixed bottom-5 lg:right-10 lg:bottom-10 lg:flex items-center gap-2 z-10">
         <Chat />
       </div>
     </section>
